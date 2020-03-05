@@ -4,9 +4,9 @@ import logo from '../logo.svg';
 function Navbar() {
     return (
         <div className="Navbar">
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <a className="navbar-brand" href="#">
-                    <img src={logo} alt="Site logo"/>
+            <nav className="navbar navbar-expand-lg">
+                <a className="navbar-brand" href="/">
+                    <img className="App-logo" src={logo} alt="Site logo"/>
                 </a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"

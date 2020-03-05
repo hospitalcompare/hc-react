@@ -1,13 +1,17 @@
 import React from 'react';
+import Todos from './Todos';
 
-function Header() {
+function Main() {
+
     return (
         <div className="Main">
-            <main className="App-main">
-                <h2>This is the main</h2>
+            <main className="App-main py-5">
+                <div className="container">
+                    <Todos/>
+                </div>
             </main>
         </div>
     );
 }
 
-export default Header;
+export default Main;
