@@ -1,12 +1,15 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Todoitem from './Todoitem';
 import PropTypes from 'prop-types';
 
 
 class Todos extends Component {
-    render(){
+    render() {
         return this.props.todos.map(
-            (todo) => <Todoitem key={todo.id} todo={todo} markComplete={this.props.markComplete}/>
+            (todo) => <Todoitem key={todo.id}
+                                todo={todo}
+                                toggleComplete={this.props.toggleComplete}
+                                delTodo={this.props.delTodo}/>
         )
     }
 }

@@ -9,7 +9,7 @@ class App extends Component {
             {
                 id: 1,
                 title: 'Do something',
-                completed: false
+                completed: true
             },
             {
                 id: 2,
@@ -24,14 +24,20 @@ class App extends Component {
         ]
     };
 
-    markComplete = (id) => {
+    toggleComplete = (id) => {
         this.setState({
             todos: this.state.todos.map(todo => {
-                if(todo.id === id){
+                if (todo.id === id) {
                     todo.completed = !todo.completed
                 }
                 return todo;
             })
+        })
+    };
+
+    delTodo = (id) => {
+        this.setState({
+            todos: [...this.state.todos.filter(todo => todo.id !== id)]
         })
     };
 
@@ -41,7 +47,9 @@ class App extends Component {
                 <Header/>
                 <main>
                     <div className="container">
-                        <Todos todos={this.state.todos} markComplete={this.markComplete}/>
+                        <Todos todos={this.state.todos}
+                               toggleComplete={this.toggleComplete}
+                               delTodo={this.delTodo}/>
                     </div>
                 </main>
             </div>
