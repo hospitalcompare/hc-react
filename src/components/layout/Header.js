@@ -1,5 +1,6 @@
 import React from 'react';
 import AddTodo from "../todos/AddTodo";
+import Navbar from "./Navbar";
 
 const Header = () => {
    const headerStyle = {
@@ -10,7 +11,7 @@ const Header = () => {
     return (
         <header style={headerStyle} className="py-3">
             <div className="container">
-                Todolist
+                <Navbar/>
             </div>
         </header>
     );
