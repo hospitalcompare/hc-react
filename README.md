@@ -70,3 +70,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ### YouTube tutorial from Traversy media: 
 
 Here: https://www.youtube.com/watch?v=sBws8MSXN7A
+
+### Docs for react snippets plugin
+
+https://github.com/jinsihou19/ReactSnippets/blob/master/README.md
